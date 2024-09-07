@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'chai',
     'tailwind',
     'theme',
+    'django_browser_reload'
 ]
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'chaiaurDjango.urls'
